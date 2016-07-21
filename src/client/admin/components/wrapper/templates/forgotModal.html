@@ -1,0 +1,26 @@
+<md-dialog class="login-modal"> 
+  <div layout="column" class="login-modal-inner md-whiteframe-z1">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools">Reset Your Password</h2>
+    </md-toolbar>
+    <md-content layout="column" class="md-padding">
+
+      <form ng-submit="submitForgotForm(data)">
+        <p>Please enter your email address and we'll send you instructions for resetting your password.</p>
+        <div>
+          <md-input-container>
+            <label>Email Address</label>
+            <input type="email" ng-model="data.email" ng-disabled="disableForgotForm" required/>
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center center" style="padding-top:20px;">
+          <!-- Passing in True to the close method so it shows the login modal when they cancel the forgot modal -->
+          <md-button type="button" ng-click="close(true)" md-no-ink="md-no-ink">Cancel</md-button>
+          <div flex="flex"></div>
+          <md-button type='submit' class="md-raised md-primary" ng-disabled="disableForgotForm">Send Reset Link</md-button>  
+        </div>
+      </form>
+
+    </md-content>
+  </div>
+</md-dialog>

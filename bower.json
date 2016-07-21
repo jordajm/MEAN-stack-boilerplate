@@ -1,0 +1,27 @@
+{
+  "name": "DI-Dash",
+  "version": "0.0.1",
+  "authors": [
+    "John Jordan <john.jordan@realeyes.com"
+  ],
+  "description": "Data visualization app",
+  "keywords": [],
+  "license": "NONE",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/client/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.2",
+    "angular-material": "~1.0.5",
+    "braintree-web": "~2.25.0",
+    "ngImgCropFullExtended": "~0.5.3"
+  },
+  "resolutions": {
+    "angular": "~1.5.2"
+  }
+}

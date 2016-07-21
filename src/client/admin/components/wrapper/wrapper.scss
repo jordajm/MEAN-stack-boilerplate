@@ -1,0 +1,56 @@
+md-toolbar, md-menu-item {
+
+  i {
+    vertical-align: top;
+  }
+}
+
+md-toolbar {
+  height: 100px;
+  background: linear-gradient( left top, colors(Blue Grey, 500), colors(Blue Grey, 700) ) !important;
+  md-menu {
+    margin-top: 7px !important;
+  }
+  
+  .md-toolbar-tools {
+    flex-flow: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+.login-modal {
+
+  md-input-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .login-modal-inner {
+    min-width: 450px;
+  }
+
+}
+
+.right-nav {
+  margin-right: -20px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+button i {
+  vertical-align: top;
+  margin-top: 5px !important;
+}
+
+.delete-btn {
+  line-height: 25px;
+  min-height: 25px;
+}
+
+
+

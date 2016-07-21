@@ -1,0 +1,38 @@
+<md-dialog class="login-modal"> 
+  <div layout="column" class="login-modal-inner md-whiteframe-z1">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools">Sign Up For Free</h2>
+    </md-toolbar>
+    <md-content layout="column" class="md-padding">
+
+      <form name="acceptForm" ng-submit="acceptForm.$valid && submitSignupForm(data)">
+        <div>
+          <md-input-container>
+            <label>Email</label>
+            <input type="email" ng-model="data.email" required/>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Choose a Password</label>
+            <input type="password" ng-model="data.password" required/>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Confirm Password</label>
+            <input type="password" ng-model="data.confirmPassword" required/>
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center center" style="padding-top:20px;">
+          <md-button type="button" ng-click="close()" md-no-ink="md-no-ink">Cancel</md-button>
+          <div flex="flex"></div>
+          <md-button type="submit" class="md-raised md-primary">Sign Up</md-button>  
+        </div>
+      </form>
+      <p>Already have a Hearth account?</p>
+      <md-button type="button" ng-click="showLoginModal()">Log In</md-button>
+
+    </md-content>
+  </div>
+</md-dialog>

@@ -1,0 +1,54 @@
+<!-- <md-backdrop 
+    class="md-dialog-backdrop md-opaque ng-scope" 
+    aria-hidden="true" 
+    style="position: fixed; opacity: 1; transition: none; background-color: rgb(204, 204, 204);"
+    ng-show="wrapperCtrl.showBackdrop">
+</md-backdrop> -->
+
+<md-toolbar class="md-primary md-hue-3">
+  <div class="md-toolbar-tools">
+    <img src="img/logo.svg" height="50">
+    <div class="right-nav" layout="row" layout-align="center center">
+      <md-button ng-click="wrapperCtrl.showModal('signup')" ng-show="!wrapperCtrl.userData">Sign Up</md-button>
+      <md-button ng-click="wrapperCtrl.showModal('login')" ng-show="!wrapperCtrl.userData">Log In</md-button>
+      <md-menu ng-show="wrapperCtrl.userData">
+        <md-button ng-click="$mdOpenMenu()">
+          <i class="material-icons person-icon profile-icon-text">&#xE7FD;</i>
+          {{ wrapperCtrl.userData.username }}
+          <i class="material-icons profile-icon-text-arrow">&#xE5CF;</i>
+        </md-button>
+        <md-menu-content width="4">
+          <md-menu-item>
+            <md-button ng-click="wrapperCtrl.showMyProfile($event)">
+              <i class="material-icons nav-menu-icon profile-icon-text" md-menu-align-target>&#xE873;</i>
+              &nbsp; My Profile
+            </md-button>
+          </md-menu-item>
+          <md-menu-item ng-if="wrapperCtrl.userData.isAdmin">
+            <md-button ng-click="wrapperCtrl.showManageUsers($event)">
+            <i class="material-icons nav-menu-icon profile-icon-text" md-menu-align-target>&#xE7EF;</i>
+              &nbsp; Manage Users
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ng-click="wrapperCtrl.logout()">
+            <i class="material-icons nav-menu-icon profile-icon-text" md-menu-align-target>&#xE879;</i>
+              &nbsp; Log Out
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+  </div>
+</md-toolbar>
+
+<admin ng-if="wrapperCtrl.showAdmin"></admin>
+<home ng-if="wrapperCtrl.showHome"></home>
+<style-finder ng-if="wrapperCtrl.showStyleFinder"></style-finder>
+<select-architect ng-if="wrapperCtrl.showSelectArchitect"></select-architect>
+<quote-builder ng-if="wrapperCtrl.showQuoteBuilder"></quote-builder>
+<client-dash ng-if="wrapperCtrl.showClientDashboard"></client-dash>
+<architect-dash ng-if="wrapperCtrl.showArchitectDashboard"></architect-dash>
+
+
+

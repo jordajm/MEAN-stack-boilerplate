@@ -1,0 +1,37 @@
+<md-dialog class="login-modal"> 
+  <div layout="column" class="login-modal-inner md-whiteframe-z1">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools">Accept Invitation</h2>
+    </md-toolbar>
+    <md-content layout="column" class="md-padding">
+
+      <form name="acceptForm" ng-submit="acceptForm.$valid && submitAcceptForm(data)">
+        <p>Please be sure to use the email address where you received the invitation.
+        <div>
+          <md-input-container>
+            <label>Email</label>
+            <input type="email" ng-model="data.email" required/>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>New Password</label>
+            <input type="password" ng-model="data.password" required/>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <label>Confirm Password</label>
+            <input type="password" ng-model="data.confirmPassword" required/>
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center center" style="padding-top:20px;">
+          <!-- <md-button type="button" ng-click="close()" md-no-ink="md-no-ink">Cancel</md-button> -->
+          <!-- <div flex="flex"></div> -->
+          <md-button type='submit' class="md-raised md-primary">Create Account</md-button>  
+        </div>
+      </form>
+
+    </md-content>
+  </div>
+</md-dialog>

@@ -1,0 +1,8 @@
+node_modules/
+typings/
+*.log
+.settings/
+.DS_STORE
+report/
+.vscode/
+.bowerrc

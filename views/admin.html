@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+
+<head>
+    <style>
+        /* this helps the ng-show/ng-hide animations start at the right place. */
+        /* since Angular has this but needs to load, this gives us the class early. */
+
+        .ng-hide {
+            display: none!important;
+        }
+    </style>
+    <title>Hearth Architecture</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <!-- build:css /styles/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/src/client/libs/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="/src/client/libs/ngImgCropFullExtended/compile/minified/ng-img-crop.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/.adminTmp/styles/styles.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</head>
+
+
+
+
+<body>
+  
+
+    <wrapper></wrapper>
+
+
+    <!-- build:js /js/lib.js -->
+    <!-- bower:js -->
+    <script src="/src/client/libs/angular/angular.js"></script>
+    <script src="/src/client/libs/angular-animate/angular-animate.js"></script>
+    <script src="/src/client/libs/angular-aria/angular-aria.js"></script>
+    <script src="/src/client/libs/angular-messages/angular-messages.js"></script>
+    <script src="/src/client/libs/angular-material/angular-material.js"></script>
+    <script src="/src/client/libs/braintree-web/dist/braintree.js"></script>
+    <script src="/src/client/libs/ngImgCropFullExtended/compile/minified/ng-img-crop.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js /js/app.js -->
+    <!-- inject:js -->
+
+
+
+    <script src="/src/client/admin/app.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/admin/admin.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/architectDash/architectDash.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/clientDash/clientDash.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/components.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/home/home.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/quoteBuilder/quoteBuilder.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/selectArchitect/selectArchitect.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/styleFinder/styleFinder.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/wrapper/wrapper.module.js"></script>
+
+
+
+    <script src="/src/client/admin/services/http/module/http.module.js"></script>
+
+
+
+    <script src="/src/client/admin/services/services.module.js"></script>
+
+
+
+    <script src="/src/client/admin/components/admin/admin.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/admin/admin.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/architectDash/architectDash.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/architectDash/architectDash.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/clientDash/clientDash.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/clientDash/clientDash.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/home/home.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/home/home.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/quoteBuilder/quoteBuilder.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/quoteBuilder/quoteBuilder.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/selectArchitect/selectArchitect.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/selectArchitect/selectArchitect.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/styleFinder/styleFinder.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/styleFinder/styleFinder.service.js"></script>
+
+
+
+    <script src="/src/client/admin/components/wrapper/wrapper.directive.js"></script>
+
+
+
+    <script src="/src/client/admin/components/wrapper/wrapper.service.js"></script>
+
+
+
+    <script src="/src/client/admin/constants/admin.constants.js"></script>
+
+
+
+    <script src="/src/client/admin/models/admin.model.js"></script>
+
+
+
+    <script src="/src/client/admin/services/http/http.service.js"></script>
+
+
+
+    <script src="/src/client/admin/services/jk-carousel/jk-carousel.js"></script>
+
+
+
+    <script src="/src/client/admin/services/s3DirectUpload/s3DirectUpload.js"></script>
+
+
+
+    <!-- endinject -->
+
+    <!-- inject:templates:js -->
+    <script src="/.adminTmp/templates.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+
+
+</body>
+
+</html>
